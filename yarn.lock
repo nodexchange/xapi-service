@@ -7245,9 +7245,11 @@ tslint-immutable@4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.7.0.tgz#086dfabfb5bc4c508128bc5f4e8e2d3fb1494f23"
 
-tslint-immutable@4.9.1:
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.9.1.tgz#ca4555d04c3995c92c912b9e57502d423151002c"
+tslint-immutable@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-6.0.1.tgz#6ae3f85cc3d8fb9d465d2f9a90ed6d6c50ccd3e6"
+  dependencies:
+    tsutils "^2.28.0 || ^3.0.0"
 
 tslint@5.11.0:
   version "5.11.0"
@@ -7290,7 +7292,7 @@ tsutils@^2.24.0, tsutils@^2.27.0, tsutils@^2.27.2, tsutils@^2.29.0:
   dependencies:
     tslib "^1.8.1"
 
-tsutils@^3.5.0:
+"tsutils@^2.28.0 || ^3.0.0", tsutils@^3.5.0:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.14.1.tgz#f1d2b93d2a0876481f2f1f98c25ba42bbd7ee860"
   dependencies:
