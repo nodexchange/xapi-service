@@ -1,4 +1,5 @@
 import { Router } from 'express';
+
 import activitiesApp from './activities/app';
 import agentsApp from './agents/app';
 import AppConfig from './AppConfig';
@@ -90,6 +91,7 @@ export default (appConfig: AppConfig): Router => {
   });
 
   const xAPIPrefix = appConfig.presenter.express.xAPIPrefix;
+  appConfig.logger.info(`xAPIPrefix URL ${xAPIPrefix}/xAPI/* is active`);
   router.use(`${xAPIPrefix}/xAPI/activities/profile`, activitiesRouter);
   router.use(`${xAPIPrefix}/xAPI/activities/state`, statesRouter);
   router.use(`${xAPIPrefix}/xAPI/agents`, agentsRouter);

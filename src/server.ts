@@ -3,6 +3,7 @@ sourceMapSupport.install();
 
 import tracker from './tracker';
 import * as express from 'express'; // tslint:disable-line:ordered-imports
+import * as cors from 'cors';
 import handleListen from 'jscommons/dist/expressPresenter/utils/handleListen';
 import app from './apps/app';
 import config from './config';
@@ -12,6 +13,8 @@ import connectToRedis from './utils/connectToRedis';
 import connectToSentinel from './utils/connectToSentinel';
 
 const expressApp = express();
+
+expressApp.use(cors());
 
 expressApp.use(app({
   logger,

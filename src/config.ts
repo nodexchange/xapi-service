@@ -21,7 +21,10 @@ const expressPort = getNumberOption(
   DEFAULT_EXPRESS_PORT,
 );
 
-const demoAuth = `http://localhost:${expressPort}/auth`;
+// const demoAuth = `http://localhost:${expressPort}/auth`;
+const demoAuth = `http://localhost:${3000}/auth`;
+console.log('demoAuth :: ' + demoAuth);
+console.log('LL CLIENT :: ' + process.env.LL_CLIENT_INFO_ENDPOINT);
 const accessLogsDir = `${storageDir}/accessLogs`;
 const newRelicLogsDir = `${storageDir}/newrelic-agent.log`;
 const newRelicLicenseKey = getStringOption(process.env.NEW_RELIC_LICENSE_KEY, '');
